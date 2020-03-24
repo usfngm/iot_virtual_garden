@@ -1,0 +1,30 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Welcome to IBM's Virtual Garden</h2>
+    <h4 id="humidity">Current Humidity is: LOADING...</h4>
+    <h4 id="status" class="red">Water Sprinklers: OFF</h4>
+    <img id="myGarden" class="img-fluid" style="width: 100%;" src="img/off.gif" />
+  </div>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/mqtt@3.0.0/dist/mqtt.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
