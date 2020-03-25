@@ -1,11 +1,11 @@
 // REPLACE THE xxx WITH UR ACTUAL DATA
 var options = {
     // ADD UR ORG ID instead of the xxx
-    host: '7h3b94.messaging.internetofthings.ibmcloud.com',
-    port: '1883', // LEAVE IT AS IT IS
-    clientId: 'a:7h3b94:' + Math.random().toString(16).substr(2, 8),
-    username: 'a-7h3b94-d1eazpznpl', // APP KEY HERE
-    password: 'ETHNeg0_xxuFvZVv85' // APP TOKEN HERE
+    host: 'xxx.messaging.internetofthings.ibmcloud.com',
+    port: 'xxx', // LEAVE IT AS IT IS
+    clientId: 'xxx' + Math.random().toString(16).substr(2, 8),
+    username: 'xxx', // APP KEY HERE
+    password: 'xxx' // APP TOKEN HERE
 }
 
 $(document).ready(() => {
