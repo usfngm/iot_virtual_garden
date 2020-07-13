@@ -2,7 +2,7 @@
 var options = {
     // ADD UR ORG ID instead of the xxx
     host: 'xxx.messaging.internetofthings.ibmcloud.com',
-    port: 'xxx', // LEAVE IT AS IT IS
+    port: '1883', // LEAVE IT AS IT IS
     clientId: 'xxx' + Math.random().toString(16).substr(2, 8),
     username: 'xxx', // APP KEY HERE
     password: 'xxx' // APP TOKEN HERE
