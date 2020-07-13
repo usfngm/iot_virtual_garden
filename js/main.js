@@ -1,9 +1,8 @@
 // REPLACE THE xxx WITH UR ACTUAL DATA
 var options = {
-    // ADD UR ORG ID instead of the xxx
-    host: 'xxx.messaging.internetofthings.ibmcloud.com',
+    host: 'xxx.messaging.internetofthings.ibmcloud.com', // ORG ID
     port: '1883', // LEAVE IT AS IT IS
-    clientId: 'xxx' + Math.random().toString(16).substr(2, 8),
+    clientId: 'xxx' + Math.random().toString(16).substr(2, 8), // c_id x:xxx:
     username: 'xxx', // APP KEY HERE
     password: 'xxx' // APP TOKEN HERE
 }
@@ -21,7 +20,8 @@ $(document).ready(() => {
     // sensor_reading is the event name
     // json is the msg type
     // the rest of the format is fixed 
-    client.subscribe("iot-2/type/test/id/1234/evt/evt/fmt/json");
+    // the format is iot-2/type/<DEVICE_TYPE>/id/<DEVICE_ID>/evt/<EVENT_NAME>/fmt/<MSG_FORMAT>
+    client.subscribe("iot-2/type/test/id/1234/evt/sensor_reading/fmt/json");
 
     // This is a callback function when we receieve a message from
     // the topic we are subscribing to
